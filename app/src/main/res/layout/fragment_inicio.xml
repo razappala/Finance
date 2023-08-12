@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ConsultarHistorial.InicioFragment"
+    android:background="@color/design_default_color_on_primary">
+
+        //Saldo disponible
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/saldo"
+        android:layout_marginTop="10dp"
+        android:textAlignment="center"
+        android:textColor="@color/normalGreen"
+        android:textSize="20dp" />
+    /////////////////////////////
+
+        //Monedero
+    <TextView
+        android:id="@+id/saldo_monedero1"
+        android:text="@string/saldo_monedero"
+        android:textAlignment="center"
+        android:textColor="@color/normalGreen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="50dp"
+        android:layout_marginTop="1dp"/>
+    /////////////////////////////
+
+        //Boton de nueva transaccion
+    <Button
+        android:id="@+id/saldo_nuevaTrans"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="100dp"
+        android:layout_marginTop="1dp"
+        android:text="Nueva transaccion" />
+    /////////////////////////////
+
+    //Boton de nueva transaccion
+    <Button
+        android:id="@+id/saldo_nuevaTransTiempo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="1dp"
+        android:text="Nueva transaccion en el tiempo" />
+    /////////////////////////////
+
+    <TextView
+        android:text="Ultimos 30 movimientos"
+        android:textAlignment="center"
+        android:textColor="@color/normalGreen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"/>
+    /////////////////////////////
+
+    /////////////////////////////
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:text="Buscar transaccion"
+        android:id="@+id/saldo_buscarTrans"
+        android:layout_marginHorizontal="100dp"/>
+
+    <Button
+        android:id="@+id/saldo_Organizador"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="100dp"
+        android:layout_marginTop="1dp"
+        android:text="Más reciente" />
+
+    <View
+        android:layout_marginHorizontal="100dp"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/holo_green_dark"/>
+    /////////////////////////////
+
+    <TextView
+        android:text="Parece que no hay transacciones"
+        android:id="@+id/saldo_vacio"
+        android:visibility="gone"
+        android:textAlignment="center"
+        android:textColor="@color/normalGreen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="40dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="10dp"/>
+    /////////////////////////////
+
+    <ListView
+        android:id="@+id/saldo_historial"
+        android:layout_width="match_parent"
+        android:textColor="@color/normalGreen"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_height="wrap_content" />
+    /////////////////////////////
+
+
+
+</LinearLayout>

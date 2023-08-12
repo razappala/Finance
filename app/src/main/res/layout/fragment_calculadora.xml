@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/design_default_color_on_primary">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:id="@+id/calcTituloOpBasica"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center_horizontal"
+        android:text="Operaciones básicas"
+        android:textColor="@color/normalGreen"
+        android:textSize="30dp"
+        />
+
+    <TextView
+        android:id="@+id/calcTituloReglaTres"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="300dp"
+        android:layout_gravity="center_horizontal"
+        android:text="Regla de tres"
+        android:textColor="@color/normalGreen"
+        android:textSize="30dp"/>
+
+    <Button
+        android:id="@+id/buttonCalcular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="230dp"
+        android:text="Calcular" />
+
+    <EditText
+        android:id="@+id/cifraPrincipal"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="100dp"
+        android:ems="10"
+        android:hint="Cifra 1"
+        android:inputType="numberDecimal"
+        android:textColor="#186438"
+        android:textSize="20dp"
+        android:textColorHint="#186438"/>
+
+    <EditText
+        android:id="@+id/cifraSecundaria"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="300dp"
+        android:layout_marginTop="100dp"
+        android:ems="10"
+        android:hint="Cifra 2"
+        android:inputType="numberDecimal"
+        android:textColor="#186438"
+        android:textSize="20dp"
+        android:textColorHint="#186438" />
+
+    <TextView
+        android:id="@+id/resultadoCalculo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="180dp"
+        android:text="Resultado.."
+        android:textColor="#186438"
+        android:textSize="20dp"
+        android:textColorHint="#186438" />
+
+    <EditText
+        android:id="@+id/operacionEntrada"
+        android:layout_width="76dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="100dp"
+        android:ems="10"
+        android:hint="+ - / * %"
+        android:inputType="textPersonName"
+        android:textColor="#186438"
+        android:textSize="20dp"
+        android:textColorHint="#186438" />
+
+    <EditText
+        android:id="@+id/cifraPrincipalReglaTres"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="350dp"
+        android:ems="10"
+        android:hint="Cifra 1"
+        android:inputType="numberDecimal"
+        android:textColor="#186438"
+        android:textSize="20dp"
+        android:textColorHint="#186438"/>
+
+    <EditText
+        android:id="@+id/cifraSecundariaReglaTres"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="300dp"
+        android:layout_marginTop="350dp"
+        android:ems="10"
+        android:hint="Cifra 2"
+        android:inputType="numberDecimal"
+        android:textColor="#186438"
+        android:textSize="20dp"
+        android:textColorHint="#186438" />
+
+    <EditText
+        android:id="@+id/cifraTerciariaReglaTres"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="430dp"
+        android:ems="10"
+        android:hint="Cifra 3"
+        android:inputType="numberDecimal"
+        android:textColor="#186438"
+        android:textSize="20dp"
+        android:textColorHint="#186438"/>
+
+    <TextView
+        android:id="@+id/resultadoReglaTres"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="440dp"
+        android:text="Resultado.."
+        android:textColor="#186438"
+        android:textSize="20dp"
+        android:layout_marginLeft="300dp"
+        android:textColorHint="#186438" />
+
+    <Button
+        android:id="@+id/buttonCalcularReglaTres"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="500dp"
+        android:text="Calcular" />
+
+</FrameLayout>

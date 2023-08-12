@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Estadisticas.EstadisticasFragment"
+    android:background="@color/design_default_color_on_primary">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:text="Parece que no hay estadisticas"
+        android:id="@+id/stats_vacio"
+        android:visibility="gone"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="40dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="90dp"/>
+    /////////////////////////////
+
+    <TextView
+        android:id="@+id/estPromGanancias"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Promedio de ganancias"
+        android:layout_marginTop="50sp"
+        android:layout_marginLeft="150sp"
+        android:textColor="@color/normalGreen" />
+
+    <TextView
+        android:id="@+id/estPromIngresos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Promedio de ingresos"
+        android:layout_marginTop="150sp"
+        android:layout_marginLeft="150sp"
+        android:textColor="@color/normalGreen" />
+
+    <TextView
+        android:id="@+id/estCPromEgresos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Promedio de egresos"
+        android:layout_marginTop="250sp"
+        android:layout_marginLeft="150sp"
+        android:textColor="@color/normalGreen" />
+
+    <TextView
+        android:id="@+id/estCantidadIngresos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cantidad de ingresos"
+        android:layout_marginTop="350sp"
+        android:layout_marginLeft="150sp"
+        android:textColor="@color/normalGreen" />
+
+    <TextView
+        android:id="@+id/estCantidadEgresos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cantidad de egresos"
+        android:layout_marginTop="450sp"
+        android:layout_marginLeft="150sp"
+        android:textColor="@color/normalGreen" />
+
+    <TextView
+        android:id="@+id/resultadoPromGanancias"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:layout_marginTop="100sp"
+        android:layout_marginLeft="150sp"
+        android:textColor="@color/normalGreen" />
+
+    <TextView
+        android:id="@+id/resultadoPromIngresos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:layout_marginTop="200sp"
+        android:layout_marginLeft="150sp"
+        android:textColor="@color/normalGreen" />
+
+    <TextView
+        android:id="@+id/resultadoPromEgresos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:layout_marginTop="300sp"
+        android:layout_marginLeft="150sp"
+        android:textColor="@color/normalGreen" />
+
+    <TextView
+        android:id="@+id/resultadoCantidadIngresos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:layout_marginTop="400sp"
+        android:layout_marginLeft="150sp"
+        android:textColor="@color/normalGreen" />
+
+    <TextView
+        android:id="@+id/resultadoCantidadEgresos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:layout_marginTop="500sp"
+        android:layout_marginLeft="150sp"
+        android:textColor="@color/normalGreen" />
+</FrameLayout>

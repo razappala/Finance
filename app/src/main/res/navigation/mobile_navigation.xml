@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/inicioFragment">
+
+    <fragment
+        android:id="@+id/monedaFragment"
+        android:name="com.example.finance.CambioDeMoneda.MonedaFragment"
+        android:label="Cambio monetario"
+        tools:layout="@layout/fragment_moneda" />
+    <fragment
+        android:id="@+id/estadisticasFragment"
+        android:name="com.example.finance.Estadisticas.EstadisticasFragment"
+        android:label="Visualizar Estadisticas"
+        tools:layout="@layout/fragment_estadisticas" />
+    <fragment
+        android:id="@+id/calculadoraFragment"
+        android:name="com.example.finance.Calculadora.CalculadoraFragment"
+        android:label="Calculadora"
+        tools:layout="@layout/fragment_calculadora" />
+    <fragment
+        android:id="@+id/pagosFragment"
+        android:name="com.example.finance.RepartirPagos.pagosFragment"
+        android:label="Division de Pagos"
+        tools:layout="@layout/fragment_pagos" />
+    <fragment
+        android:id="@+id/inicioFragment"
+        android:name="com.example.finance.ConsultarHistorial.InicioFragment"
+        android:label="Historial"
+        tools:layout="@layout/fragment_inicio" />
+</navigation>

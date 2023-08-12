@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ConsultarHistorial.ActTransaccionesTiempo"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="Registre su transaccion en el tiempo"
+        android:textSize="20dp"
+        android:textColor="@color/normalGreen"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Monto de dinero:"
+        android:textSize="18dp"
+        android:textColor="@color/normalGreen"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:id="@+id/trans_monto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textSize="20dp"
+        android:textColor="@color/normalGreen"
+        android:layout_marginHorizontal="70dp"
+        android:inputType="numberDecimal" />
+
+    <com.google.android.material.chip.ChipGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="80dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"
+        app:singleSelection="true">
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/trans_ingreso"
+            style="@style/Widget.MaterialComponents.Chip.Filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:text="Ingreso"
+            android:textAlignment="center"
+            android:textSize="20dp" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/trans_egreso"
+            style="@style/Widget.MaterialComponents.Chip.Filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
+            android:text="Egreso"
+            android:textAlignment="center"
+            android:textSize="20dp" />
+
+    </com.google.android.material.chip.ChipGroup>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Descripcion:"
+        android:textSize="18dp"
+        android:textColor="@color/normalGreen"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:id="@+id/trans_desp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textSize="20dp"
+        android:textColor="@color/normalGreen"
+        android:layout_marginHorizontal="40dp"
+        android:inputType="textShortMessage" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Realizar dentro de.. (dias):"
+            android:textSize="18dp"
+            android:textColor="@color/normalGreen" />
+
+        <EditText
+            android:id="@+id/trans_dias"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_marginLeft="20dp"
+            android:hint="Dias"
+            android:textColorHint="@color/normalGreen"
+            android:inputType="number" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:id="@+id/trans_Cancelar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancelar"
+            android:onClick="cancelado"/>
+
+        <Button
+            android:id="@+id/trans_Aceptar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Aceptar"
+            android:onClick="aceptar"/>
+    </LinearLayout>
+
+</LinearLayout>

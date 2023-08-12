@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ConsultarHistorial.ActTransacciones">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="Registre su transaccion"
+        android:textSize="20dp"
+        android:textColor="@color/normalGreen"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Monto de dinero:"
+        android:textSize="18dp"
+        android:textColor="@color/normalGreen"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:id="@+id/trans_monto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textSize="20dp"
+        android:textColor="@color/normalGreen"
+        android:layout_marginHorizontal="70dp"
+        android:inputType="numberDecimal" />
+
+    <com.google.android.material.chip.ChipGroup
+        android:textColor="@color/black"
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="80dp"
+        android:layout_height="wrap_content"
+        app:singleSelection="true"
+        android:layout_marginTop="20dp">
+
+        <com.google.android.material.chip.Chip
+            android:text="Ingreso"
+            android:textSize="20dp"
+            style="@style/Widget.MaterialComponents.Chip.Filter"
+            android:layout_marginHorizontal="10dp"
+            android:id="@+id/trans_ingreso"
+            android:textAlignment="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <com.google.android.material.chip.Chip
+            android:text="Egreso"
+            android:textSize="20dp"
+            style="@style/Widget.MaterialComponents.Chip.Filter"
+            android:layout_marginHorizontal="10dp"
+            android:textAlignment="center"
+            android:id="@+id/trans_egreso"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.chip.ChipGroup>
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Descripcion:"
+        android:textSize="18dp"
+        android:textColor="@color/normalGreen"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:id="@+id/trans_desp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textSize="20dp"
+        android:textColor="@color/normalGreen"
+        android:layout_marginHorizontal="40dp"
+        android:inputType="textShortMessage" />
+
+    <Button
+        android:id="@+id/trans_Aceptar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="90dp"
+        android:layout_marginTop="20dp"
+        android:text="Aceptar"
+        android:onClick="aceptado" />
+
+    <Button
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="85dp"
+        android:id="@+id/trans_Cancelar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancelar"
+        android:onClick="cancelar"/>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>
